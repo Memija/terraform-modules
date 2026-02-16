@@ -48,11 +48,8 @@ variable "subresource_name" {
 }
 variable "private_dns_zone_ids" {
   description = "A list of private DNS zone IDs to be linked with the private endpoint"
-  validation {
-    condition     = length(var.private_dns_zone_ids) >= 1
-    error_message = "At least one private DNS zone ID must be provided."
-  }
-  type = list(string)
+  default     = []
+  type        = list(string)
 }
 variable "tags" {
   description = "A mapping of tags to assign to the resource"
