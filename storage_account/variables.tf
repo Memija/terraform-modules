@@ -86,3 +86,9 @@ variable "tags" {
   }
   type = map(string)
 }
+
+variable "retention_in_days" {
+  description = "Specifies the number of days that the blob should be retained."
+  default     = 7
+  type        = number
+}

@@ -10,10 +10,10 @@ resource "azurerm_storage_account" "this" {
 
   blob_properties {
     delete_retention_policy {
-      days = local.retention_in_days
+      days = var.retention_in_days
     }
     container_delete_retention_policy {
-      days = local.retention_in_days
+      days = var.retention_in_days
     }
   }
 
