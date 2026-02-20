@@ -45,6 +45,18 @@ Creates an Azure Role Assignment.
 - `principal_id`: ID of the principal (user, group, SP).
 - `principal_type`: Type of the principal (default: "ServicePrincipal").
 
+### 4. `container_registry`
+
+Creates an Azure Container Registry.
+
+**Inputs:**
+- `name`: Name of the Container Registry.
+- `resource_group_name`: Name of the resource group.
+- `location`: Azure region.
+- `sku`: The SKU name (Basic, Standard, Premium).
+- `admin_enabled`: Enable admin user (default: false).
+- `tags`: Resource tags.
+
 ## Usage
 
 See the `variables.tf` file in each module directory for detailed input descriptions and validation rules.
