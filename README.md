@@ -57,6 +57,18 @@ Creates an Azure Container Registry.
 - `admin_enabled`: Enable admin user (default: false).
 - `tags`: Resource tags.
 
+### 5. `virtual_network`
+
+Creates an Azure Virtual Network.
+
+**Inputs:**
+- `name`: Name of the virtual network.
+- `resource_group_name`: Name of the resource group.
+- `location`: Azure region.
+- `address_space`: Address space for the virtual network (list of CIDRs).
+- `dns_servers`: List of DNS server IPs (optional).
+- `tags`: Resource tags.
+
 ## Usage
 
 See the `variables.tf` file in each module directory for detailed input descriptions and validation rules.
