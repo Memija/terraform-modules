@@ -69,6 +69,18 @@ Creates an Azure Virtual Network.
 - `dns_servers`: List of DNS server IPs (optional).
 - `tags`: Resource tags.
 
+### 6. `log_analytics_workspace`
+
+Creates an Azure Log Analytics Workspace.
+
+**Inputs:**
+- `name`: Name of the Log Analytics Workspace.
+- `resource_group_name`: Name of the resource group.
+- `location`: Azure region.
+- `sku`: The SKU (pricing tier) (default: "PerGB2018").
+- `retention_in_days`: The workspace data retention in days (default: 30).
+- `tags`: Resource tags.
+
 ## Usage
 
 See the `variables.tf` file in each module directory for detailed input descriptions and validation rules.
