@@ -81,6 +81,19 @@ Creates an Azure Log Analytics Workspace.
 - `retention_in_days`: The workspace data retention in days (default: 30).
 - `tags`: Resource tags.
 
+### 7. `subnet`
+
+Creates an Azure Subnet.
+
+**Inputs:**
+- `name`: Name of the subnet.
+- `resource_group_name`: Name of the resource group.
+- `virtual_network_name`: Name of the virtual network.
+- `address_prefixes`: List of address prefixes for the subnet.
+- `service_endpoints`: List of Service endpoints to associate with the subnet.
+- `private_endpoint_network_policies_enabled`: Enable or Disable network policies for the private endpoint on the subnet (default: true).
+- `private_link_service_network_policies_enabled`: Enable or Disable network policies for the private link service on the subnet (default: true).
+
 ## Usage
 
 See the `variables.tf` file in each module directory for detailed input descriptions and validation rules.
